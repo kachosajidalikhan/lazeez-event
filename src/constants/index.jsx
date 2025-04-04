@@ -1,4 +1,4 @@
-import logo from "../assets/logo.png";
+import logo from "../assets/Logo.png";
 import image1 from "../assets/gourmet-chicken-biryani-with-steamed-basmati-rice-generated-by-ai-free-photo-removebg-preview (1) 1.png"
 import image2 from "../assets/chicken-tikka-masala-served-bowl-600nw-2502136341-removebg-preview (1) 1.png"
 import image3 from '../assets/chicken-tikka/burger-dinner-food-hamburger-wallpaper-preview-removebg-preview (1) 1.png'
@@ -16,7 +16,7 @@ import image14 from '../assets/korma/chicken-skewers-with-slices-apples-chili_28
 import image15 from '../assets/tikka/gourmet-chicken-biryani-with-steamed-basmati-rice-generated-by-ai-free-photo-removebg-preview (1) 2.png';
 import image16 from '../assets/tikka/thumb-1920-885487-removebg-preview (1) 1.png';
 import image17 from '../assets/tikka/korma-chicken4-600nw-223265599__1_-removebg-preview (1) 1.png';
-import logo2 from '../assets/icons/logo2.png';
+import logo2 from '../assets/icons/Logo2.png';
 import icon1 from '../assets/icons/maki_restaurant.png'
 import icon2 from '../assets/icons/ic_baseline-festival.png'
 import icon3 from '../assets/icons/Vector-4.png'
