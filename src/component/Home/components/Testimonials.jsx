@@ -19,7 +19,7 @@ export default function Testimonials() {
       <img
         src={files.Foods1}
         alt="Chef"
-        className=" absolute bottom-0 left-0 md:w-100 w-60"
+        className=" absolute bottom-0 left-0 md:w-50 w-30"
 
       />
        <img
@@ -57,7 +57,7 @@ export default function Testimonials() {
         </div>
 
         {/* Download Section */}
-        <div className="mt-16 text-center">
+        <div className="z-10 mt-16 text-center">
           <h3 className="text-3xl Poppins-bold text-[#ED004F]">
             Download Lazeez App Now!
           </h3>

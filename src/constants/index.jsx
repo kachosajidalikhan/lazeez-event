@@ -71,6 +71,22 @@ import Ellipse17 from '../assets/Ellipse 17.svg';
 import Ellipse18 from '../assets/Ellipse 18.svg';
 import Ellipse19 from '../assets/Ellipse 19.svg';
 import Ellipse20 from '../assets/Ellipse 20.svg';
+import ChefIcon2 from '../assets/chefIcon2.png';
+import Logo2 from '../assets/logo2.svg';
+import Chef3 from '../assets/chef3.svg';
+import RestaurantIcon from '../assets/restaurantIcon.svg';
+import BakeryIcon from '../assets/bakeryIcon.svg';
+import CoffeeSnacks from '../assets/Coffee And Snacks.svg';
+import Catering from '../assets/catering.svg';
+import Group30 from '../assets/Group 30.svg';
+import Group4 from '../assets/Group 4.svg';
+import Image4 from '../assets/image 4.svg';
+
+import Image5 from '../assets/image 5.svg';
+import Group36 from '../assets/Group 36.svg';
+import Image6 from '../assets/image 6.svg';
+import Group56 from '../assets/Group 56.svg';
+import Group58 from '../assets/Group-58.png';
 
 const files = {
     logo: logo,bg: bg,vector: vector,logo2:  logo2,icon1: icon1,
@@ -88,7 +104,10 @@ const files = {
     WalimaIcon:WalimaIcon,MajlisIcon:MajlisIcon,BirthdayIcon:BirthdayIcon,
     MehendiIcon:MehendiIcon, CanIcon2:CanIcon2,Shwarma2:Shwarma2, ChefIcon:ChefIcon,
     UserIcon2:UserIcon2, Ellipse17:Ellipse17, Ellipse18:Ellipse18, Ellipse19:Ellipse19,
-    Ellipse20:Ellipse20,
+    Ellipse20:Ellipse20,ChefIcon2:ChefIcon2, Logo2:Logo2, Chef3:Chef3,
+    RestaurantIcon:RestaurantIcon, BakeryIcon:BakeryIcon, CoffeeSnacks:CoffeeSnacks,
+    Catering:Catering, Group30:Group30, Group4:Group4, Image4:Image4, Image5:Image5,
+    Group36:Group36, Image6:Image6, Group56:Group56, Group58:Group58,
 }
 
 

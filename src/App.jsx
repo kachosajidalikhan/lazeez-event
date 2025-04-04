@@ -10,6 +10,7 @@ import LoginForm from './component/login/login'
 import ForgotPass from './component/login/enterEmail'
 import TwoStepPage from './component/login/twoStepPage'
 import ResetPass from './component/login/resetpassword'
+import VendorPage from './component/Vendor/vendorPage'
 function App() {
 
   return (
@@ -24,6 +25,7 @@ function App() {
       <Route path="/Forgot-Pass" element={<ForgotPass/>} />  
       <Route path="/Two-Step-Page" element={<TwoStepPage/>} />  
       <Route path="/Reset-Pass" element={<ResetPass/>} />
+      <Route path="/vendor-page" element={<VendorPage/>} />
     </Routes>
     <Footer/>
     </>

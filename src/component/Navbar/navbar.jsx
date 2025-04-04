@@ -36,7 +36,7 @@ export default function Navbar() {
           Lazeez Packages
         </Link>
         <Link
-          to="/vendor"
+          to="/vendor-page"
           className="text-[#E91E63] font-medium hover:text-[#C2185B]"
         >
           Become a Vendor
