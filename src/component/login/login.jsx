@@ -25,7 +25,9 @@ export default function LoginForm() {
         console.log("Form submitted:", formData);
     };
 
-    return (
+    return (<>
+    <br />
+    <br />
         <div className="relative w-full max-w-[1088px] mx-auto p-4 sm:p-6 md:p-8">
             <div className="bg-pink-100 rounded-[60px] sm:rounded-[80px] md:rounded-[120px] p-4 sm:p-6 md:p-8 shadow-lg">
                 <div className="flex flex-col md:flex-row items-center justify-between mt-6">
@@ -61,7 +63,7 @@ export default function LoginForm() {
                                     onChange={handleChange}
                                     className="w-full pl-10 pr-3 h-12 py-3 Poppins rounded-md bg-[#F1BBBBBA] placeholder-[#ED004F] focus:outline-none focus:ring-2 focus:ring-pink-500"
                                     required
-                                />
+                                    />
                             </div>
 
                             {/* Password */}
@@ -77,7 +79,7 @@ export default function LoginForm() {
                                     onChange={handleChange}
                                     className="w-full pl-10 pr-3 h-12 py-3 Poppins rounded-md bg-[#F1BBBBBA] placeholder-[#ED004F] focus:outline-none focus:ring-2 focus:ring-pink-500"
                                     required
-                                />
+                                    />
                             </div>
 
                             {/* Login link */}
@@ -91,7 +93,7 @@ export default function LoginForm() {
                                 <button
                                     type="submit"
                                     className="w-full sm:w-2/3 h-10 md:w-[60%] bg-[#ED004FB0] Poppins hover:bg-pink-600 text-white font-semibold text-sm py-2 rounded-md transition-colors"
-                                >
+                                    >
                                     Login
                                 </button>
                             </div>
@@ -100,5 +102,6 @@ export default function LoginForm() {
                 </div>
             </div>
         </div>
+                                    </>
     );
 }

@@ -10,6 +10,8 @@ import VendorPerks from '../Home/components/vendor';
 export default function VendorPage() {
     return (
         <>
+        <br />
+        <br />
             <VendorHero />
             <WhoCanJoin />
             <RegistrationProcess />

@@ -1,6 +1,7 @@
 import React from "react";
-import { FaFacebookF, FaLinkedinIn, FaTimes, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaTwitter, FaInstagram } from "react-icons/fa";
 import { MdEmail, MdLocationOn } from "react-icons/md";
+import files from '../../constants/index'
 
 export default function Footer() {
     return (
@@ -21,13 +22,21 @@ export default function Footer() {
                     </div>
 
                     {/* Middle Section - Contact Info */}
-                    <div className="w-1/3 mb-6 Poppins sm:mb-0">
-                        <p className="flex items-center  gap-2">
-                            <MdEmail className="text-lg" /> xyz@lazeezevents.com
-                        </p>
-                        <p className="flex items-center justify-center gap-2 mt-2">
-                            <MdLocationOn className="text-xl" /> 203 Progressive Plaza, Beaumont Road, Civil Lines Karachi, 75530
-                        </p>
+                    <div className="w-full md:w-1/3 mb-6 Poppins sm:mb-0">
+                        <div className="flex gap-2 mt-2 items-center">
+                            <MdEmail className="text-lg" />
+                            <p>
+                                xyz@lazeezevents.com
+                            </p>
+
+                        </div>
+                        <div className="flex gap-2 mt-2 items-center">
+
+                            <MdLocationOn className="text-4xl lg:text-2xl" />
+                            <p>
+                                203 Progressive Plaza, Beaumont Road, Civil Lines Karachi, 75530
+                            </p>
+                        </div>
                     </div>
 
                     {/* Right Section - Links & Social Media */}
@@ -40,7 +49,9 @@ export default function Footer() {
                         <div className="flex gap-4 mt-4">
                             <FaFacebookF className="text-lg cursor-pointer hover:scale-110 transition" />
                             <FaLinkedinIn className="text-lg cursor-pointer hover:scale-110 transition" />
-                            <FaTimes className="text-lg cursor-pointer hover:scale-110 transition" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
+                                <path d="M 5.9199219 6 L 20.582031 27.375 L 6.2304688 44 L 9.4101562 44 L 21.986328 29.421875 L 31.986328 44 L 44 44 L 28.681641 21.669922 L 42.199219 6 L 39.029297 6 L 27.275391 19.617188 L 17.933594 6 L 5.9199219 6 z M 9.7167969 8 L 16.880859 8 L 40.203125 42 L 33.039062 42 L 9.7167969 8 z"></path>
+                            </svg>
                             <FaInstagram className="text-lg cursor-pointer hover:scale-110 transition" />
                         </div>
                     </div>

@@ -2,6 +2,7 @@
 import React from "react"
 import files from "../../../constants";
 import { Star } from "lucide-react";
+import { Link } from "react-router-dom";
 export default function Features() {
 
     const card = [{
@@ -32,8 +33,8 @@ export default function Features() {
     }]
     return (
         <>
-
             <section className="w-full bg-white">
+                <br />
                 <div className="px-8 ">
                     <h1 className="Poppins-bold mb-6 text-[#ED004F] text-4xl md:text-5xl lg:text-6xl">Featured Packages</h1>
                     <p className="Poppins lg:w-[75%] md:text-[28px]">Explore our exclusive food packages
@@ -44,26 +45,23 @@ export default function Features() {
                     </p>
 
                 </div>
-                <br />
-                <br />
-                <br />
 
-                <div className="px-6 py-6 mt-4 flex md:flex-row flex-col justify-center items-center  w-full gap-6">
+                <div className="px-2 py-6 grid gap-3 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
                     {
                         card.map((item, index) => {
                             return (
                                 <div key={index}
                                     style={{ backgroundImage: `url(${files.circle})`, backgroundRepeat: 'no-repeat', backgroundPositionX: '-30px', backgroundPositionY: '390px', backgroundPosition: 'fixed' }}
-                                    className="p-4 bg-white Poppins card-shadow back-image lg:w-95 md:w-56 ">
+                                    className="p-2 m-auto rounded-[20px] bg-white Poppins card-shadow back-image lg:w-80 md:w-86 ">
                                     <div className="flex gap-4 flex-col items-center">
                                         <img src={item.extra} alt="" className="absolute -ml-20" />
                                         <img src={item.image} alt="" />
                                         <h1 className="text-[#CC054D] Poppins-bold text-[18px]">{item.title}</h1>
-                                        <span className="Poppins text-[12px] px-2 text-center w-62">{item.description}</span>
+                                        <span className="Poppins text-[12px] text-center w-62">{item.description}</span>
                                     </div>
                                     <br />
                                     <div>
-                                        <span className="text-[#ED004F]"><strong>Ingredients: </strong>{item.ingredients}</span>
+                                        <span className="text-[#ED004F]"><strong>Food Items: </strong>{item.ingredients}</span>
                                     </div>
                                     <div className="flex justify-between items-center mt-4">
 
@@ -75,9 +73,9 @@ export default function Features() {
                                         {"⭐".repeat(item.rating)}
 
                                     </div>
-                                    <div className="flex gap-4 items-center justify-center mt-4">
-                                        <button className="bg-[#ED004F]/69 px-4 py-1 rounded-full text-white">Order Now</button>
-                                        <button className="bg-[#ED004F]/69 px-4 py-1 rounded-full text-white">Learn More</button>
+                                    <div className="flex gap-4 items-center flex-col lg:flex-row justify-center mt-4">
+                                        <button className="bg-[#ED004F]/69 px-2 md:px-4 py-1 rounded-full text-white">Order Now</button>
+                                        <button className="bg-[#ED004F]/69 px-2 md:px-4 py-1 rounded-full text-white">Learn More</button>
                                     </div>
                                     <img src={files.vector} alt="" className="fixed z-70" />
                                 </div>
@@ -86,64 +84,89 @@ export default function Features() {
                     }
                 </div>
             </section>
-            <section style={{ backgroundImage: `url(${files.bg2})`, backgroundRepeat: 'no-repeat',backgroundPositionX:'' }}
-                className="w-full lg:bg-cover bg-contain  gap-4">
-                
-                <div>
-                    <br />
-                    <br />
-                    <div className="lg:w-[60%] w-[80%] md:mt-10 md:ml-6 px-10 md:py-10">
-                    <h2 className="Poppins-bold md:text-[62px] text-[40px] text-white">Kuch Lazeez <br /> Hojaye?
-                    </h2>
-                    <span className="text-white Poppins md:text-2xl">Download our app to effortlessly plan
-                        your events and customize food packages with
-                        just a few taps—your perfect event is now at your fingertips!
-                    </span>
-                    </div>
+            {/* <section style={{ backgroundImage: `url(${files.bg2})`, backgroundRepeat: 'no-repeat',backgroundPositionX:'' }} */}
+            <section className="w-full lg:bg-cover bg-cover  gap-4">
 
-                    <div className="mt-2 px-10">
-                    <div className="flex-col md:flex md:flex-row gap-4">
-                        <div className="bg-white md:mb-0 mb-4 px-2 py-1 rounded-lg flex items-center justify-center">
-                            <img src={files.apple} alt="" width={40} className="mr-2" />
-                            <h1 className="text-[#ED004F] Poppins">Download the App On <strong className="text-[#ED004F]"> <br /> App Store</strong></h1>
+                <div>
+
+
+                    <div className="flex">
+                        <br />
+                        <br />
+                        <div className="lg:w-[60%] w-[80%] md:mt-10 md:ml-6 p-4 md:py-10">
+                            <h2 className="Poppins-bold md:text-[62px] text-[40px]  text-white leading-tight">Kuch Lazeez <br /> Hojaye?
+                            </h2>
+                            <span className="text-white Poppins md:text-[30px]">Download our app to effortlessly plan
+                                your events and customize food packages with
+                                just a few taps—your perfect event is now at your fingertips!
+                            </span>
                         </div>
-                        <div className="bg-white px-2 py-1 rounded-lg flex items-center justify-center"> 
-                            <img src={files.play} alt="" width={40} className="mr-2" />
-                            <h1 className="text-[#ED004F] Poppins">Download the App On <strong className="text-[#ED004F]"> <br /> Play Store</strong></h1>
+                        <img src={files.group59} alt="" className=" absolute right-0 lg:w-100 md:w-70 w-40" />
+
+                    </div>
+                    <div className="px-10 ">
+                        <div className="flex-col md:flex md:flex-row gap-4">
+                            <div className="bg-white md:mb-0 mb-4 px-2 py-1 rounded-lg flex items-center w-fit">
+                                <img src={files.apple} alt="" className=" w-[46px] h-[46px] mr-2" />
+                                <h1 className="text-[#ED004F] Poppins text-[14px] md:text-[18px]">Download the App On <strong className="text-[#ED004F] text-[16px] md:text-[20px]"> <br /> App Store</strong></h1>
+                            </div>
+                            <div className="bg-white px-2 py-1 rounded-lg flex items-center w-fit">
+                                <img src={files.play} alt="" className=" w-[46px] h-[46px] mr-2" />
+                                <h1 className="text-[#ED004F] Poppins text-[14px] md:text-[18px]" >Download the App On <strong className="text-[#ED004F] text-[16px] md:text-[20px]"> <br /> Play Store</strong></h1>
+                            </div>
                         </div>
-                    </div>
-                    <div className="mt-10 md:flex gap-16">
-                        <button className="bg-[#A8003D] md:mb-0 mb-4 Poppins-bold text-white rounded-lg px-4 py-2">Become Our Partner</button>
-                        <button className="bg-[#A8003D] Poppins-bold text-white rounded-lg px-4 py-2"> Sign up</button>
-                    </div>
+                        <div className="mt-10 md:flex gap-16">
+                            <Link to='/vendor-page'>
+                            <button className="bg-[#A8003D] md:mb-0 mb-4 Poppins-bold text-white rounded-lg px-4 py-2">Become Our Partner</button>
+                            </Link>
+                            <Link to="/Signup-Form">
+                            <button className="bg-[#A8003D] Poppins-bold text-white rounded-lg px-4 py-2"> Sign up</button>
+                            </Link>
+                        </div>
                     </div>
                 </div>
                 <br />
                 <br />
-                <div className=" px-10 md:py-10">
+
+                <img src={files.Foods2} alt="" className="md:w-30 w-15 relative left-10 md:top-10  " />
+                <div className=" px-10 flex md:py-10">
                     <div className="md:ml-6">
                         <h1 className="text-white Poppins-bold md:text-[62px] text-[40px]">Chefs! Let's Cook</h1>
                         <div className="flex gap-4 justify-between">
-                        <span className="text-white Poppins md:text-2xl lg:w-[70%]">
-                        Whether you're a catering service, a restaurant, 
-                        a local culinary expert, or a cozy café, 
-                        join Lazeez Events to showcase your talent
-                         and grow your business. Signing up is simple: register, 
-                        list your packages, and become a part 
-                        of memorable celebrations!
-                        </span>
-                        {/* <img src={files.chef} alt="" width={200} height={40} className=" relative right-100"/> */}
+                            <span className="text-white Poppins md:text-2xl lg:w-[70%]">
+                                Whether you're a catering service, a restaurant,
+                                a local culinary expert, or a cozy café,
+                                join Lazeez Events to showcase your talent
+                                and grow your business. Signing up is simple: register,
+                                list your packages, and become a part
+                                of memorable celebrations!
+                            </span>
+                            {/* <img src={files.chef} alt="" width={200} height={40} className=" relative right-100"/> */}
                         </div>
+                        <img src={files.frame11} alt="" className="md:w-30 w-15 absolute left-0 " />
                         <br />
                         <br />
+                        <Link to='/vendor-page'>
                         <button className="bg-[#A8003D] Poppins-bold text-white rounded-lg px-4 py-2">Become Our Partner</button>
+                        </Link>
                     </div>
+                    {/* <div className="w-full">
+                        <img src={files.chef} alt="" className=" absolute right-40 w-80" />
+                        <div>
+                            <img src={files.Foods3} alt="" className=" relative -right-14 w-40" />
+                        </div>
+                        <div>
+                            <img src={files.group60} alt="" className=" relative right-10 w-40" />
+                        </div>
+                        <div>
+                            <img src={files.Foods4} alt="" className=" relative -right-10 w-40" />
+                        </div>
+
+                    </div> */}
                 </div>
                 <br />
-            <br />
-            <br />
             </section>
-            
+
 
         </>
     )

@@ -98,7 +98,7 @@ export default function VendorPerks() {
                 {/* CTA Button */}
                 <div className="flex Poppins justify-center">
                     <Link
-                        to="/register"
+                        to="/vendor-page"
                         className="bg-[#CC054D] hover:bg-pink-700 text-white font-medium py-3 px-8 rounded-md transition duration-300 text-lg"
                     >
                         Register Now!

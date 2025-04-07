@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-    <div className='bg-radial-[at_50%_50%] from-[#DF6894] via-[#DA5183] to-[#CC054D] to-80% '>
+    <div className='bg-radial-[at_50%_45%] bg-fixed from-[#E78BAC] via-[#DA5183] to-[#CC054D] to-80% '>
 
     <App />
     </div>

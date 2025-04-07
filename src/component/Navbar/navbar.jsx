@@ -7,7 +7,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full py-4 px-6 bg-[#FCE7EF] flex items-center justify-between">
+    <nav className="w-full fixed z-2000 py-4 px-6 bg-[#FCE7EF] flex items-center justify-between">
       {/* Logo */}
       <div className="flex lg:block items-center gap-2">
         <Link to="/" className="flex items-center">

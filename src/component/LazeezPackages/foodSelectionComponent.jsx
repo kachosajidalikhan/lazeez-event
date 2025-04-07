@@ -64,8 +64,8 @@ export default function FoodSelection() {
     return (
         <section className=" relative w-full py-16">
                 <div className=" absolute w-full flex justify-between items-center top-300">
-                    <img src={files.Shwarma2} alt="" />
-                    <img src={files.CanIcon2} alt="" />
+                    <img src={files.Shwarma2} alt="" className="w-10 md:w-30" />
+                    <img src={files.CanIcon2} alt="" className="w-10 md:w-30" />
                 </div>
             <div className="container mx-auto px-4 max-w-6xl">
                 <h1 className="text-center text-white Poppins-bold text-3xl md:text-4xl md:text-[70px] mb-12 max-w-3xl mx-auto leading-tight">

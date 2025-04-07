@@ -49,6 +49,11 @@ import userIcon from '../assets/icons/Group 15.png'
 import logobg from "../assets/icons/Group 54.svg"
 import group55 from "../assets/icons/Group 55.png"
 import whiteLogo from '../assets/icons/Frame 1.png'
+import Twitter from '../assets/pngwing.com.png'
+import group59 from '../assets/icons/Group 59.png'
+import frame11 from '../assets/icons/Frame 11.png'
+import group60 from '../assets/icons/Group 60.png'
+import group66 from '../assets/icons/Group 66.png'
 
 import CanIcon from '../assets/CanIcon.svg';
 import WLogo from '../assets/Group 52-1.png';
@@ -107,7 +112,8 @@ const files = {
     Ellipse20:Ellipse20,ChefIcon2:ChefIcon2, Logo2:Logo2, Chef3:Chef3,
     RestaurantIcon:RestaurantIcon, BakeryIcon:BakeryIcon, CoffeeSnacks:CoffeeSnacks,
     Catering:Catering, Group30:Group30, Group4:Group4, Image4:Image4, Image5:Image5,
-    Group36:Group36, Image6:Image6, Group56:Group56, Group58:Group58,
+    Group36:Group36, Image6:Image6, Group56:Group56, Group58:Group58, Twitter:Twitter,
+    group59:group59, frame11:frame11, group60:group60, group66:group66
 }
 
 

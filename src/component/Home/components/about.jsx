@@ -22,11 +22,12 @@ export default function AboutSection() {
     ];
 
     return (
+        <>
         <section className="w-full bg-white pt-6">
             <div className="container p-6 mx-auto max-w-6xl">
                 {/* Heading and Description */}
-                <div className="max-w-4xl mb-16">
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl Poppins-bold font-extrabold text-[#ED004F] mb-6">
+                <div className="max-w-4xl">
+                    <h2 className="text-4xl leading-normal md:text-5xl lg:text-6xl Poppins-bold font-extrabold text-[#ED004F] mb-6">
                         Say Goodbye to Event's Food Hassle!
                     </h2>
                     <p className="text-lg md:text-[28px] Poppins text-gray-800 leading-relaxed">
@@ -46,41 +47,41 @@ export default function AboutSection() {
                 <img src={files.bg} alt="" className="hidden md:block" />
 
 
-                <div className="md:hidden Poppins flex gap-10 flex-col block p-2">
+                <div className="md:hidden Poppins flex gap-10 flex-col p-2">
                     <div className="gap-2 flex flex-col items-center">
                         <div className="flex gap-4 items-center">
-                            <img src={files.icon1} alt="" width={60} />
-                            <span className="text-2xl">Aapke Khane</span>
+                            <img src={files.icon1} alt="" width={40} />
+                            <span className="text-xl">Aapke Khane</span>
                         </div>
                         <div className="flex gap-4 items-center">
-                            <img src={files.icon2} alt="" width={60} />
-                            <span className="text-2xl">Aapke Events</span>
+                            <img src={files.icon2} alt="" width={40} />
+                            <span className="text-xl">Aapke Events</span>
                         </div>
                     </div>
                     
 
                     {/* <CornerLeftDown className="w-16 h-16 text-[#ED004F] relative left-12" /> */}
-                    <img src={files.icon6} alt="" width={130} className=" -rotate-55" />
+                    <img src={files.icon6} alt="" width={80} className=" -rotate-55" />
                     
 
                     <div className="flex gap-4 items-center justify-center">
-                        <img src={files.icon4} alt="" width={60} />
-                        <span className="text-2xl">Aapki Choice</span>
+                        <img src={files.icon4} alt="" width={40} />
+                        <span className="text-xl">Aapki Choice</span>
 
                     </div>
                     {/* <ArrowDown className="w-16 h-16 text-[#ED004F] mx-auto" /> */}
-                    <img src={files.icon5} alt="" width={130}  className="mx-auto -rotate-75"/>
+                    <img src={files.icon5} alt="" width={80}  className="mx-auto -rotate-75"/>
 
                     <div className="m-auto">
                         <img src={files.logo} alt="" />
 
                     </div>
                     {/* <CornerLeftDown className="w-16 h-16 text-[#ED004F] relative left-12" /> */}
-                    <img src={files.icon6} alt="" width={130} className=" -rotate-45" />
+                    <img src={files.icon6} alt="" width={80} className=" -rotate-45" />
 
                     <div className="flex gap-4 items-center justify-center">
-                        <img src={files.icon7} alt="" width={60} />
-                        <span className="text-2xl">Top-notch trusted vendor</span>
+                        <img src={files.icon7} alt="" width={40} />
+                        <span className="text-xl">Top-notch trusted vendor</span>
 
                     </div>
 
@@ -89,7 +90,7 @@ export default function AboutSection() {
                 <div className=" relative  md:w-[55%] w-full lg:bottom-20 md:bottom-13   flex flex-col items-center justify-center gap-6">
 
                     <Link
-                        to="/partner"
+                        to="/vendor-page"
                     >
                         <button
                             className="bg-[#ED004F]/69 Poppins w-fit h-fit p-2 hover:bg-[#ED004F] text-white font-medium  rounded-md transition duration-300">
@@ -100,6 +101,7 @@ export default function AboutSection() {
 
                 </div>
             </section>
+
             <div className="flex flex-col md:hidden gap-6 items-center px-4 py-10">
                 {features.map((feature, index) => (
                     <>
@@ -126,5 +128,6 @@ export default function AboutSection() {
                 ))}
             </div>
         </section>
+        </>
     );
 }

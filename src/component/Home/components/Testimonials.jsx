@@ -8,12 +8,12 @@ export default function Testimonials() {
       <img
         src={files.Foods2}
         alt="Coke"
-        className="w-20 md:w-30 absolute top-4 md:left-4 opacity-80"
+        className="w-20 md:w-30 absolute top-4 opacity-80"
       />
       <img
         src={files.Foods3}
         alt="Hotdog"
-        className="w-20 md:w-30 absolute top-6 right-6 opacity-80"
+        className="w-20 md:w-30 absolute top-6 right-0 opacity-80"
         width={100}
       />
       <img
@@ -25,7 +25,7 @@ export default function Testimonials() {
        <img
         src={files.Foods4}
         alt="Chef"
-        className="md:w-30 w-18 absolute bottom-0 right-6"
+        className="md:w-30 w-18 absolute bottom-0 right-0"
         width={100}
       />
 

@@ -25,7 +25,9 @@ export default function SignupForm() {
         console.log("Form submitted:", formData);
     };
 
-    return (
+    return (<>
+        <br />
+        <br />
         <div className="relative w-full max-w-[1088px] mx-auto p-4 sm:p-6 md:p-8">
             <div className="bg-pink-100 rounded-[60px] sm:rounded-[80px] md:rounded-[120px] p-4 sm:p-6 md:p-8 shadow-lg">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-8 mt-6">
@@ -76,7 +78,7 @@ export default function SignupForm() {
                                     onChange={handleChange}
                                     className="w-full pl-10 pr-3 h-10 py-3 rounded-md bg-[#F1BBBBBA] Poppins placeholder-[#ED004F] focus:outline-none focus:ring-2 focus:ring-pink-500"
                                     required
-                                />
+                                    />
                             </div>
 
                             {/* Email */}
@@ -92,7 +94,7 @@ export default function SignupForm() {
                                     onChange={handleChange}
                                     className="w-full pl-10 pr-3 h-10 py-3 Poppins rounded-md bg-[#F1BBBBBA] placeholder-[#ED004F] focus:outline-none focus:ring-2 focus:ring-pink-500"
                                     required
-                                />
+                                    />
                             </div>
 
                             {/* Password */}
@@ -117,7 +119,7 @@ export default function SignupForm() {
                                 <button
                                     type="submit"
                                     className="w-full sm:w-2/3 h-8 md:w-1/2 bg-[#ED004FB0] Poppins hover:bg-pink-600 text-white font-semibold text-sm py-2 rounded-md transition-colors"
-                                >
+                                    >
                                     Submit
                                 </button>
                             </div>
@@ -136,18 +138,19 @@ export default function SignupForm() {
                                 name="acceptTerms"
                                 checked={formData.acceptTerms}
                                 onChange={handleChange}
-                                className="mt-1 h-3 w-3 text-pink-600 focus:ring-pink-500 border-pink-300 rounded"
-                                required
-                            />
+                                className="mt-1 h-4 w-4 accent-[#ED004F] border-2 border-[#ED004F] focus:ring-[#ED004F] rounded"
+                                />
+
                             <label htmlFor="terms" className="ml-2 text-sm text-[#ED004F] Poppins">
                                 By creating an account you accept our{" "} <br />
-                                <a href="/terms" className="font-bold text-[#ED004F] hover:underline Poppins">Terms and Conditions</a> and{" "}
-                                <a href="/privacy" className="font-bold text-[#ED004F] hover:underline Poppins">Privacy Policy</a>.
+                                <a href="/terms" className=" text-[#ED004F] hover:underline Poppins-bold">Terms and Conditions</a> and{" "}
+                                <a href="/privacy" className=" text-[#ED004F] hover:underline Poppins-bold">Privacy Policy</a>.
                             </label>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+                                </>
     );
 }

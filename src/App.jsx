@@ -16,6 +16,8 @@ function App() {
   return (
     <>
     <Navbar/>
+    <br />
+    <br />
     <Routes>
       <Route path="/" element={<Home/>} />
       <Route path="/about" element={<AboutUs/>} />  
@@ -29,6 +31,9 @@ function App() {
     </Routes>
     <Footer/>
     </>
+    /* Section 2 */
+    
+
   )
 }
 
