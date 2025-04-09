@@ -1,5 +1,6 @@
 import React from "react";
 import files from "../../../constants/index"
+import ScrollAnimatedRight from "../../scrollright";
 
 export default function Testimonials() {
   return (
@@ -36,6 +37,8 @@ export default function Testimonials() {
         {/* Testimonial Cards */}
         <div className="flex flex-wrap justify-center gap-6">
           {[1, 2, 3].map((_, index) => (
+            <ScrollAnimatedRight>
+
             <div
               key={index}
               style={{backgroundImage:`url(${files.circle})`,
@@ -53,12 +56,13 @@ export default function Testimonials() {
               <h3 className="text-pink-60 Poppins-bold mt-4">Lorem ipsum</h3>
               <p className="text-gray-500 Poppins">lorem ipsum</p>
             </div>
+          </ScrollAnimatedRight>
           ))}
         </div>
 
         {/* Download Section */}
-        <div className="z-10 mt-16 text-center">
-          <h3 className="text-3xl Poppins-bold text-[#ED004F]">
+        <div className="mt-16 text-center">
+          <h3 className="z-1000 text-3xl Poppins-bold text-[#ED004F]">
             Download Lazeez App Now!
           </h3>
           <button className="mt-4 px-6 Poppins py-2 bg-[#CC054D] text-white rounded-xl shadow-lg">
@@ -69,16 +73,16 @@ export default function Testimonials() {
           <div className="flex flex-wrap justify-center gap-6 mt-6">
             <div className="flex items-center gap-2 z-10 bg-white">
               <img src={files.play} alt="Play Store" className="z-10 w-10" />
-              <p className="text-sm Poppins text-[#ED004F]">
+              <p className="md:text-[18px] Poppins text-[#ED004F]">
                 Download on <br />
-                <span className="Poppins-bold">Play Store</span>
+                <span className="Poppins-bold md:text-[20px] text-[16px] ">Play Store</span>
               </p>
             </div>
             <div className="flex bg-white z-10 Poppins items-center gap-2">
               <img src={files.apple} alt="App Store" className="z-10 w-10" />
-              <p className="text-sm text-[#ED004F]">
+              <p className="md:text-[18px] text-[#ED004F]">
                 Download on <br />
-                <span className="Poppins-bold">App Store</span>
+                <span className="Poppins-bold md:text-[20px] text-[16px] ">App Store</span>
               </p>
             </div>
           </div>

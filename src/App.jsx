@@ -3,7 +3,7 @@ import Navbar from './component/Navbar/navbar'
 import { Route, Routes } from 'react-router-dom'
 import Home from './component/Home/home'
 import Footer from './component/Footer/footer'
-import AboutUs from './component/AboutUs/aboutus'
+import AboutUs from './component/AboutUs/aboutUs'
 import LazeezPackages from './component/LazeezPackages/lazeezPackages'
 import SignupForm from './component/signup/signup'
 import LoginForm from './component/login/login'
@@ -11,6 +11,14 @@ import ForgotPass from './component/login/enterEmail'
 import TwoStepPage from './component/login/twoStepPage'
 import ResetPass from './component/login/resetpassword'
 import VendorPage from './component/Vendor/vendorPage'
+import SubPackages from './component/Subpackages/subPackages'
+import FAQs from './component/FAQs/faqSection'
+import Blogs from './component/Blogs/blogsPage'
+import PressSection from './component/PressRelease/pressRelease'
+import PrivacyPage from './component/PrivacyPage/privacyPolicy'
+import TermsPage from './component/TermsandCondition/termsAndConditions'
+import RefundPage from './component/Refundpage/refundCancellationPolicy'
+import AppDownloadSection from './component/AppDownload/appDownloadPage'
 function App() {
 
   return (
@@ -28,6 +36,14 @@ function App() {
       <Route path="/Two-Step-Page" element={<TwoStepPage/>} />  
       <Route path="/Reset-Pass" element={<ResetPass/>} />
       <Route path="/vendor-page" element={<VendorPage/>} />
+      <Route path="/FAQs" element={<FAQs/>} />
+      <Route path="/blogs-page" element={<Blogs/>} />
+      <Route path="/privacy-policy-page" element={<PrivacyPage/>} />
+      <Route path="/terms-and-condition-page" element={<TermsPage/>} />
+      <Route path="/refund-cancellation-page" element={<RefundPage/>} />
+      <Route path="/press-release-page" element={<PressSection/>} />
+      <Route path="/App-Download-Section" element={<AppDownloadSection/>} />
+      <Route path="/Sub-Packages/:id" element={<SubPackages/>} />
     </Routes>
     <Footer/>
     </>

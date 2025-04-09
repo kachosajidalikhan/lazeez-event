@@ -1,4 +1,5 @@
 import files from "../../constants/index";
+import ScrollAnimatedRight from "../scrollright";
 
 export default function WhoCanJoin() {
   const services = [
@@ -31,20 +32,22 @@ export default function WhoCanJoin() {
   ];
 
   return (
-    <div className="relative px-10 py-16">
-      <h1 className="text-white Poppins-bold text-center text-4xl md:text-[72px] lg:text-[72px] leading-tight mb-50 mt-30">
+    <div className="overflow-hidden relative px-10">
+      <h1 className="text-white Poppins-bold text-center text-4xl md:text-[72px] lg:text-[72px] leading-tight mb-50">
         Who can Join?
       </h1>
       <div className=" hidden md:block absolute right-40 bottom-122">
         <img src={files.Group30} alt="" />
       </div>
-      <div className=" hidden md:block absolute left-55 -bottom-27 z-2">
-        <img src={files.Group4} alt="" />
+      <div className=" absolute left-20 md:left-40 -bottom-0 z-2">
+        <img src={files.Group4} alt="" className="w-20 lg:w-full" />
       </div>
       {/* Cards Container */}
       <div className="container mx-auto">
-        <div className="flex flex-wrap justify-center gap-x-14 gap-y-60">
+        <div className="flex flex-wrap justify-center gap-x-14 gap-y-30">
           {services.map((service, index) => (
+            <ScrollAnimatedRight>
+
             <div
               key={index}
               className="relative bg-[#FF5B97F2] bg-opacity-40 rounded-xl p-6 text-center text-white backdrop-blur-sm shadow-lg w-full md:w-[309px] md:h-[370px] lg:w-[309px] lg:h-[370px]"
@@ -58,7 +61,7 @@ export default function WhoCanJoin() {
                     width={120}
                     height={120}
                     className="object-contain"
-                  />
+                    />
                 </div>
               </div>
 
@@ -68,9 +71,10 @@ export default function WhoCanJoin() {
                 <p className="text-[20px] Poppins">{service.description}</p>
               </div>
             </div>
+          </ScrollAnimatedRight>
           ))}
         </div>
       </div>
-    </div>
-  );
-}
+      </div>
+    );
+  }

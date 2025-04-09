@@ -142,7 +142,7 @@ export default function SignupForm() {
                                 />
 
                             <label htmlFor="terms" className="ml-2 text-sm text-[#ED004F] Poppins">
-                                By creating an account you accept our{" "} <br />
+                                By creating an account you accept our{" "}
                                 <a href="/terms" className=" text-[#ED004F] hover:underline Poppins-bold">Terms and Conditions</a> and{" "}
                                 <a href="/privacy" className=" text-[#ED004F] hover:underline Poppins-bold">Privacy Policy</a>.
                             </label>
@@ -150,6 +150,8 @@ export default function SignupForm() {
                     </div>
                 </div>
             </div>
+            <br />
+            <br />
         </div>
                                 </>
     );

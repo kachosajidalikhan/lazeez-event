@@ -1,6 +1,8 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
+import { useEffect, useRef, useState } from 'react';
+import VendorPopup from "./vendorPopup";
 
 // Custom Icon
 const customIcon = new L.Icon({
@@ -9,6 +11,29 @@ const customIcon = new L.Icon({
 });
 
 export default function Map() {
+  const mapRef = useRef(null);
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setShowPopup(true);
+        }
+      },
+      {
+        threshold: 0.5, // 50% map visible
+      }
+    );
+
+    if (mapRef.current) {
+      observer.observe(mapRef.current);
+    }
+
+    return () => {
+      if (mapRef.current) observer.unobserve(mapRef.current);
+    };
+  }, []);
   return (
     <section className="w-full py-16 px-6">
       <div className="container mx-auto max-w-6xl">
@@ -23,7 +48,7 @@ export default function Map() {
         </div>
 
         {/* Map */}
-        <div className="w-full h-[400px] rounded-4xl overflow-hidden shadow-lg">
+        <div ref={mapRef}  className="w-full h-[400px] rounded-4xl overflow-hidden shadow-lg">
           <MapContainer
             center={[37.8044, -122.2711]} // Oakland Coordinates
             zoom={12}
@@ -37,6 +62,9 @@ export default function Map() {
               <Popup>Vendor Available Here!</Popup>
             </Marker>
           </MapContainer>
+          {showPopup && (
+          <VendorPopup isOpen={showPopup} onClose={() => setShowPopup(false)} />
+        )}
         </div>
       </div>
     </section>

@@ -1,10 +1,12 @@
-
-
-import React from "react"
+import React, {useState} from "react"
 import files from "../../constants/index";
 import { Star } from "lucide-react";
-export default function PackFeatures() {
+import PopupModal from "../Subpackages/popUp";
+import ScrollAnimatedSection from "../scrollsection";
+import ScrollAnimatedRight from "../scrollright";
 
+export default function PackFeatures() {
+const [selectedCard, setSelectedCard] = useState(null);
     const card = [{
         title: "Ramadan Special",
         image: files.box,
@@ -34,10 +36,12 @@ export default function PackFeatures() {
     return (
         <>
        
-<section className="w-full bg-white">
+<section className="overflow-hidden w-full bg-white">
 <br />
         <br />
         <br />
+        <ScrollAnimatedSection>
+
                 <div className="px-8 ">
                     <h1 className="Poppins-bold mb-6 text-[#ED004F] text-4xl md:text-5xl lg:text-6xl">Featured Packages</h1>
                     <p className="Poppins lg:w-[75%] md:text-[28px]">Explore our exclusive food packages
@@ -48,26 +52,30 @@ export default function PackFeatures() {
                     </p>
 
                 </div>
+        </ScrollAnimatedSection>
                 <br />
                 <br />
                 <br />
 
-                <div className="px-6 py-6 mt-4 flex md:flex-row flex-col justify-center items-center  w-full gap-6">
+                <div className="px-2 py-6 grid gap-3 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
                     {
                         card.map((item, index) => {
                             return (
+                                <>
+                                <ScrollAnimatedRight>
+
                                 <div key={index}
                                     style={{ backgroundImage: `url(${files.circle})`, backgroundRepeat: 'no-repeat', backgroundPositionX: '-30px', backgroundPositionY: '390px', backgroundPosition: 'fixed' }}
-                                    className="p-4 bg-white Poppins card-shadow back-image lg:w-95 md:w-56 ">
+                                    className="p-2 m-auto rounded-[20px] bg-white Poppins card-shadow back-image lg:w-80 md:w-86 ">
                                     <div className="flex gap-4 flex-col items-center">
-                                        <img src={item.extra} alt="" className="absolute -ml-20" />
+                                        {/* <img src={item.extra} alt="" className="absolute -ml-20" /> */}
                                         <img src={item.image} alt="" />
                                         <h1 className="text-[#CC054D] Poppins-bold text-[18px]">{item.title}</h1>
-                                        <span className="Poppins text-[12px] px-2 text-center w-62">{item.description}</span>
+                                        <span className="Poppins text-[12px] text-center w-62">{item.description}</span>
                                     </div>
                                     <br />
                                     <div>
-                                        <span className="text-[#ED004F]"><strong>Ingredients: </strong>{item.ingredients}</span>
+                                        <span className="text-[#ED004F]"><strong>Food Items: </strong>{item.ingredients}</span>
                                     </div>
                                     <div className="flex justify-between items-center mt-4">
 
@@ -80,16 +88,21 @@ export default function PackFeatures() {
 
                                     </div>
                                     <div className="flex gap-4 items-center justify-center mt-4">
-                                        <button className="bg-[#ED004F]/69 px-4 py-1 rounded-full text-white">Order Now</button>
-                                        <button className="bg-[#ED004F]/69 px-4 py-1 rounded-full text-white">Learn More</button>
+                                        <button onClick={() => setSelectedCard(item)} className="bg-[#ED004F]/69 px-2 md:px-4 py-1 rounded-full text-white text-[10px] md:text-[10px]">Order Now</button>
+                                        <button onClick={() => setSelectedCard(item)} className="bg-[#ED004F]/69 px-2 md:px-4 py-1 rounded-full text-white text-[10px] md:text-[10px]">Learn More</button>
                                     </div>
-                                    <img src={files.vector} alt="" className="fixed z-70" />
+                                    {/* <img src={files.vector} alt="" className="fixed z-70" /> */}
                                 </div>
+                                        </ScrollAnimatedRight>
+                                    </>
                             )
                         })
                     }
                 </div>
             </section>
+             {selectedCard && (
+                                        <PopupModal item={selectedCard} onClose={() => setSelectedCard(null)} />
+                                    )}
             </>
                 )
             }

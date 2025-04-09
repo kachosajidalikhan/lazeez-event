@@ -92,6 +92,26 @@ import Group36 from '../assets/Group 36.svg';
 import Image6 from '../assets/image 6.svg';
 import Group56 from '../assets/Group 56.svg';
 import Group58 from '../assets/Group-58.png';
+import Groups58 from '../assets/Group 58.svg';
+import Group39 from '../assets/Group 39.svg';
+import Group38 from '../assets/Group 38.svg';
+import Ellipse06 from '../assets/Ellipse 6.svg';
+import Biker from '../assets/Biker.svg';
+import Group70 from '../assets/Group 70.png';
+import Group75 from '../assets/Group 75.png';
+import chef3d from '../assets/3D Food Icon by @Odafe_UI.png';
+import Group24 from '../assets/Group 24.png';
+import StarBadge from '../assets/Star Badge.png';
+import Target from '../assets/Target.png';
+import Group74 from '../assets/Group 74.png';
+import Group71  from '../assets/Group 71.png'
+import Group72  from '../assets/Group 72.png'
+import Group73  from '../assets/Group 73.png'
+import Frame18 from '../assets/Frame 18.png'
+import LazeezDopping from '../assets/Lazeez  - Dripping.gif'
+import one from '../assets/1.png'
+import Group78 from '../assets/Group 78.png'
+
 
 const files = {
     logo: logo,bg: bg,vector: vector,logo2:  logo2,icon1: icon1,
@@ -113,7 +133,11 @@ const files = {
     RestaurantIcon:RestaurantIcon, BakeryIcon:BakeryIcon, CoffeeSnacks:CoffeeSnacks,
     Catering:Catering, Group30:Group30, Group4:Group4, Image4:Image4, Image5:Image5,
     Group36:Group36, Image6:Image6, Group56:Group56, Group58:Group58, Twitter:Twitter,
-    group59:group59, frame11:frame11, group60:group60, group66:group66
+    group59:group59, frame11:frame11, group60:group60, group66:group66, Group39:Group39,
+    Groups58:Groups58, Group38:Group38, Ellipse06:Ellipse06,Biker:Biker,Group70:Group70,
+    Group75:Group75,chef3d:chef3d, Group24:Group24, StarBadge:StarBadge, Target:Target,
+    Group74:Group74, Group71:Group71,Group72:Group72,Group73:Group73,Frame18:Frame18, 
+    LazeezDopping:LazeezDopping,one:one,Group78:Group78
 }
 
 

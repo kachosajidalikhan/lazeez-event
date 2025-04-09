@@ -1,14 +1,18 @@
 import files from "../../constants/index";
+import ScrollAnimatedRight from "../scrollright";
+import ScrollAnimatedSection from "../scrollsection";
 
 export default function ListFoodMenuSection() {
     return (
-        <section className="relative w-full py-16 px-6 md:px-10 md:pt-50">
+        <section className="relative overflow-hidden w-full px-6 md:px-10 pt-30">
             <div className="container mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 
                     {/* Text Section */}
+                    <ScrollAnimatedSection>
+
                     <div className="text-white">
-                        <h2 className="text-4xl md:text-5xl mb-6 Poppins-bold leading-tight">
+                        <h2 className="text-3xl  md:text-4xl mb-6 Poppins-bold leading-tight">
                             List your menu and food packages.
                         </h2>
                         <p className="text-lg md:text-[25px] font-normal leading-relaxed Poppins">
@@ -17,21 +21,25 @@ export default function ListFoodMenuSection() {
                             business.
                         </p>
                     </div>
+                    </ScrollAnimatedSection>
 
                     {/* Image & Decorative SVG */}
+                    <ScrollAnimatedRight>
+
                     <div className="flex justify-center md:justify-center relative">
-                        <div className="relative w-48 h-48 md:w-54 md:h-54 -top-5">
+                        <div className="relative w-48 md:w-54 md:h-54 -top-5">
                             <img
                                 src={files.Image5}
                                 alt="Menu book illustration"
-                                className="object-contain w-full h-full"
-                            />
+                                className="w-38 md:w-full"
+                                />
                         </div>
                     </div>
+                                </ScrollAnimatedRight>
                 </div>
             </div>
-            <div className=" justify-end hidden md:flex  relative z-2">
-                <img src={files.Group36} alt="" className="absolute right-30" />
+            <div className="">
+                <img src={files.Group36} alt="" className=" absolute w-20 lg:w-40 left-0 right-0 m-auto" />
             </div>
         </section>
     );

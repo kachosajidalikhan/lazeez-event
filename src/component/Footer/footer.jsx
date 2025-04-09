@@ -2,6 +2,7 @@ import React from "react";
 import { FaFacebookF, FaLinkedinIn, FaTwitter, FaInstagram } from "react-icons/fa";
 import { MdEmail, MdLocationOn } from "react-icons/md";
 import files from '../../constants/index'
+import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
@@ -14,10 +15,21 @@ export default function Footer() {
                     {/* Left Section - Policies */}
                     <div className="w-full Poppins sm:w-1/3 mb-6 sm:mb-0">
                         <ul className="space-y-2">
+                            <a href="/privacy-policy-page">
                             <li className="hover:underline cursor-pointer">Privacy Policy</li>
+                            </a>
+                            <a href="#">
                             <li className="hover:underline cursor-pointer">Captain Policy</li>
+                            </a>
+                            <a href="#">
                             <li className="hover:underline cursor-pointer">Cookies Policy</li>
+                            </a>
+                            <a href="refund-cancellation-page">
+                            <li className="hover:underline cursor-pointer">Refund and Cancellation</li>
+                            </a>
+                            <a href="/terms-and-condition-page">
                             <li className="hover:underline cursor-pointer">Terms and Condition</li>
+                            </a>
                         </ul>
                     </div>
 
@@ -42,9 +54,15 @@ export default function Footer() {
                     {/* Right Section - Links & Social Media */}
                     <div className="w-full flex gap-20 justify-around sm:w-1/3 ">
                         <ul className="space-y-2 Poppins">
+                            <Link to="/FAQs">
                             <li className="hover:underline cursor-pointer">FAQs</li>
+                            </Link>
+                            <Link to="/blogs-page">
                             <li className="hover:underline cursor-pointer">Blogs</li>
+                            </Link>
+                            <Link to="/press-release-page">
                             <li className="hover:underline cursor-pointer">Press Release</li>
+                            </Link>
                         </ul>
                         <div className="flex gap-4 mt-4">
                             <FaFacebookF className="text-lg cursor-pointer hover:scale-110 transition" />

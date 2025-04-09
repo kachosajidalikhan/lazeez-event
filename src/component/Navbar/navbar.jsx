@@ -19,7 +19,7 @@ export default function Navbar() {
           <img
             src={files.logo2}
             alt="Lazeez Events Logo"
-            className="block lg:hidden w-[100px] h-[73px]"
+            className="block lg:hidden w-[80px]"
           />
         </Link>
       </div>
@@ -55,7 +55,7 @@ export default function Navbar() {
       </button>
 
       {/* Search & Notification (Desktop Only) */}
-      <div className="hidden md:flex items-center bg-white rounded-full gap-4">
+      <div className="hidden lg:flex items-center bg-white rounded-full gap-4">
         <div className="relative flex items-center">
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-[#CC054D] h-4 w-4" />
           <input
@@ -84,14 +84,14 @@ export default function Navbar() {
             Home
           </Link>
           <Link
-            to="/packages"
+            to="/Lazeez-Packages"
             className="text-[#E91E63] font-medium hover:text-[#C2185B]"
             onClick={() => setIsMenuOpen(false)}
           >
             Lazeez Packages
           </Link>
           <Link
-            to="/vendor"
+            to="/vendor-page"
             className="text-[#E91E63] font-medium hover:text-[#C2185B]"
             onClick={() => setIsMenuOpen(false)}
           >

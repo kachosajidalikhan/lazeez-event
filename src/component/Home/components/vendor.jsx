@@ -1,12 +1,16 @@
 import { Link } from "react-router-dom"; // ✅ React Router ka Link
 import { Target, DollarSign, Star } from "lucide-react";
 import files from "../../../constants";
+import ScrollAnimatedRight from "../../scrollright";
+import ScrollAnimatedSection from "../../scrollsection";
 
 export default function VendorPerks() {
     return (
         <section className="w-full py-16 px-6 bg-white">
             <div className="container mx-auto max-w-6xl">
                 {/* Heading and Description */}
+                <ScrollAnimatedRight>
+
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl Poppins-bold lg:text-6xl font-bold text-[#ED004F] mb-6">
                         Vendor Perks
@@ -19,12 +23,15 @@ export default function VendorPerks() {
                         today!
                     </p>
                 </div>
+                </ScrollAnimatedRight>
 
                 {/* Benefit Cards */}
                 <div className="grid Poppins grid-cols-1 md:grid-cols-3 gap-8 mb-16">
                     {/* Card 1 */}
+                    <ScrollAnimatedSection>
+
                     <div style={{backgroundImage:`url(${files.circle})`,backgroundPositionY:'140px', backgroundPositionX:"-160px"}} 
-                    className="bg-white rounded-lg bg-no-repeat bg-cover shadow-lg overflow-hidden relative p-6">
+                    className="bg-white md:h-[350px] rounded-lg bg-no-repeat bg-cover shadow-lg overflow-hidden relative p-6">
                         <div className="flex justify-center mb-6">
                             <div className="relative">
                                 <div className="w-24 h-24 rounded-full flex items-center justify-center">
@@ -41,10 +48,11 @@ export default function VendorPerks() {
                         </p>
                         <div className="absolute top-4 right-4 w-4 h-4 bg-pink-200 rounded-full z-0"></div>
                     </div>
+                    </ScrollAnimatedSection>
 
                     {/* Card 2 */}
                     <div style={{backgroundImage:`url(${files.circle})`,backgroundPositionY:'140px', backgroundPositionX:"-160px"}} 
-                    className="bg-white rounded-lg bg-no-repeat bg-cover shadow-lg overflow-hidden relative p-6">
+                    className="bg-white md:h-[350px] rounded-lg bg-no-repeat bg-cover shadow-lg overflow-hidden relative p-6">
                         <div className="flex justify-center mb-6">
                             <div className="relative">
                                 <div className="w-24 h-24 rounded-full flex items-center justify-center">
@@ -64,8 +72,10 @@ export default function VendorPerks() {
                     </div>
 
                     {/* Card 3 */}
+                    <ScrollAnimatedRight>
+
                     <div style={{backgroundImage:`url(${files.circle})`,backgroundPositionY:'140px', backgroundPositionX:"-160px"}} 
-                    className="bg-white rounded-lg bg-no-repeat bg-cover shadow-lg overflow-hidden relative p-6">
+                    className="bg-white md:h-[350px] rounded-lg bg-no-repeat bg-cover shadow-lg overflow-hidden relative p-6">
                         <div className="flex justify-center mb-6">
                             <div className="relative">
                                 <div className="w-24 h-24 rounded-full flex items-center justify-center">
@@ -86,6 +96,7 @@ export default function VendorPerks() {
                         {/* <div className="absolute -bottom-3 -left-10 w-32 h-32 bg-pink-100 rounded-full -mb-16 -mr-16 z-0"></div> */}
                         <div className="absolute top-14 right-10 w-4 h-4 bg-pink-200 rounded-full z-0"></div>
                     </div>
+                        </ScrollAnimatedRight>
                 </div>
 
                 {/* And many more */}
@@ -98,7 +109,7 @@ export default function VendorPerks() {
                 {/* CTA Button */}
                 <div className="flex Poppins justify-center">
                     <Link
-                        to="/vendor-page"
+                        to="/Signup-Form"
                         className="bg-[#CC054D] hover:bg-pink-700 text-white font-medium py-3 px-8 rounded-md transition duration-300 text-lg"
                     >
                         Register Now!
