@@ -38,11 +38,11 @@ export default function Features() {
     }]
     return (
         <>
-            <section className="overflow-hidden w-full bg-white">
+            <section className=" w-full bg-white">
         <br />
                 <br />
     <ScrollAnimatedSection>
-                <div className="px-8 ">
+                <div className="o px-8 ">
                     <h1 className="Poppins-bold mb-6 text-[#ED004F] text-4xl md:text-5xl lg:text-6xl">Featured Packages</h1>
                     <p className="Poppins lg:w-[75%] md:text-[28px]">Explore our exclusive food packages
                         crafted for your special events.
@@ -101,9 +101,9 @@ export default function Features() {
                             <PopupModal item={selectedCard} onClose={() => setSelectedCard(null)} />
                         )}
             {/* <section style={{ backgroundImage: `url(${files.bg2})`, backgroundRepeat: 'no-repeat',backgroundPositionX:'' }} */}
-            <section className="w-full overflow-hidden lg:bg-cover bg-cover  gap-4">
+            <section className="w-full lg:bg-cover bg-cover  gap-4">
 
-                <div>
+                
 
 
                         <ScrollAnimatedRight>
@@ -122,11 +122,11 @@ export default function Features() {
                         
                         
 
-                        <img src={files.Group70} alt="" className=" absolute right-0 lg:w-100 md:w-70 w-40" />
+                        <img src={files.Group70} alt="" className=" absolute right-0 lg:w-100 md:w-70 w-30" />
 
                     </div>
                         </ScrollAnimatedRight>
-                    <div className="px-10 ">
+                    <div className="px-4 ">
                         <ScrollAnimatedSection>
 
                         <div className="flex-col md:flex md:flex-row gap-4">
@@ -142,22 +142,24 @@ export default function Features() {
                         </ScrollAnimatedSection>
                         <ScrollAnimatedRight>
 
-                        <div className="mt-10 md:flex gap-16">
+                        <div className=" mt-10 flex md:flex-row flex-col gap-x-4">
                             <Link to='/vendor-page'>
-                                <button  className="bg-[#A8003D] md:mb-0 mb-4 Poppins-bold text-white rounded-lg px-4 py-2">Become Our Partner</button>
+                                <button  className="bg-[#A8003D] md:mb-0 mb-4 Poppins-bold text-white rounded-lg px-6 py-2 md:text-[20px]">Become Our Partner</button>
                             </Link>
                             <Link to="/Signup-Form">
-                                <button className="bg-[#A8003D] Poppins-bold text-white rounded-lg px-4 py-2"> Sign up</button>
+                                <button className="bg-[#A8003D] Poppins-bold text-white rounded-lg px-6 py-2 md:text-[20px]"> Sign up</button>
                             </Link>
                         </div>
                         </ScrollAnimatedRight>
                     </div>
-                </div>
                 <br />
                 <br />
 
-                <div className="relative w-full min-h-[500px] md:h-screen overflow-hidden px-6 py-12 md:px-12">
+                <div className="relative w-full min-h-[500px] md:h-screen px-6 py-12 md:px-12">
                     {/* Soda can - top left */}
+                    <div className="absolute -top-30 right-0 md:hidden block">
+                        <img src={files.group66} alt="French fries,logo" className="object-contain w-[200px]" />
+                    </div>
 
                     <div className="absolute md:-top-1">
                         <img src={files.Foods2} alt="Soda can" className="object-contain md:w-[130px] md:h-[200px] w-[80px] h-[80px]" />
@@ -181,7 +183,7 @@ export default function Features() {
                     <ScrollAnimatedRight>
 
                     <div className="relative z-10 max-w-lg">
-                        <h1 className="text-white w-180 text-5xl md:text-7xl font-bold pt-40 mb-6 Poppins-bold">Chefs! Let's Cook</h1>
+                        <h1 className="text-white md:w-180 text-4xl md:text-7xl font-bold pt-40 mb-6 Poppins-bold">Chefs! Let's Cook</h1>
                         <p className="text-white text-lg md:text-xl mb-8 Poppins">
                             Whether you're a catering service, a restaurant, a local culinary expert, or a cozy café, join Lazeez Events
                             to showcase your talent and grow your business. Signing up is simple: register, list your packages, and become

@@ -32,7 +32,7 @@ export default function MouSigningSection() {
                     </p>
                 </div>
                 </ScrollAnimatedRight>
-                <div className="relative md:absolute -bottom-10 left-0 z-2">
+                <div className="relative md:absolute -bottom-4 left-0 z-2">
                     <img src={files.Group4} alt="" className="w-20 lg:w-full" />
                 </div>
             </div>

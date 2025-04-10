@@ -39,7 +39,7 @@ export default function WhoCanJoin() {
       <div className=" hidden md:block absolute right-40 bottom-122">
         <img src={files.Group30} alt="" />
       </div>
-      <div className=" absolute left-20 md:left-40 -bottom-0 z-2">
+      <div className=" absolute left-20 md:left-30 -bottom-0 hidden md:block z-2">
         <img src={files.Group4} alt="" className="w-20 lg:w-full" />
       </div>
       {/* Cards Container */}

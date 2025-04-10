@@ -7,11 +7,11 @@ import ScrollAnimatedSection from "../../scrollsection";
 export default function VendorPerks() {
     return (
         <section className="w-full py-16 px-6 bg-white">
-            <div className="container mx-auto max-w-6xl">
+            <div className="overflow-hidden container mx-auto max-w-6xl">
                 {/* Heading and Description */}
                 <ScrollAnimatedRight>
 
-                <div className="text-center mb-16">
+                <div className="overflow-hidden text-center mb-16">
                     <h2 className="text-4xl md:text-5xl Poppins-bold lg:text-6xl font-bold text-[#ED004F] mb-6">
                         Vendor Perks
                     </h2>
@@ -109,7 +109,7 @@ export default function VendorPerks() {
                 {/* CTA Button */}
                 <div className="flex Poppins justify-center">
                     <Link
-                        to="/Signup-Form"
+                        to="/vendor-page"
                         className="bg-[#CC054D] hover:bg-pink-700 text-white font-medium py-3 px-8 rounded-md transition duration-300 text-lg"
                     >
                         Register Now!

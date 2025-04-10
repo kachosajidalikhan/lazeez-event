@@ -11,8 +11,8 @@ export default function LazeezVendor() {
                     {/* Left Section - Text & Button */}
                     <ScrollAnimatedSection>
 
-                    <div className="space-y-6 pl-10">
-                        <h1 className="text-5xl md:text-6xl font-bold leading-tight pt-5 Poppins-bold">Lazeez Vendor Portal</h1>
+                    <div className="space-y-6 px-4">
+                        <h1 className="text-4xl md:text-6xl leading-tight pt-5 Poppins-bold">Lazeez Vendor Portal</h1>
                         <p className="text-lg md:text-2xl leading-relaxed Poppins">
                             Access your user-friendly <br /> personalized dashboard to manage <br /> orders, update menus, track <br /> performance, and
                             connect with <br /> event organizers—all in one place. <br /> Designed exclusively for our vendors <br /> to streamline
@@ -34,8 +34,8 @@ export default function LazeezVendor() {
 
                     <div className="relative mt-10 md:mt-0">
                         <div className="relative z-20 flex justify-end">
-                            <div className="relative md:w-[500px] md:h-[500px]">
-                                <img src={files.Group70} alt="" />
+                            <div className="relative ">
+                                <img src={files.Group70} alt="" className="w-80 md:w-[500px]" />
 
                             </div>
                         </div>

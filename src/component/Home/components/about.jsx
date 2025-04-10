@@ -30,8 +30,8 @@ export default function AboutSection() {
 
     return (
         <>
-            <section className="relative overflow-hidden w-full bg-white pt-6">
-                <div className="container p-6 mx-auto max-w-6xl">
+            <section className="relative w-full bg-white pt-6">
+                <div className="overflow-hidden container p-6 mx-auto max-w-6xl">
                     {/* Heading and Description */}
                     <ScrollAnimatedSection>
 
@@ -53,7 +53,7 @@ export default function AboutSection() {
                     </ScrollAnimatedSection>
 
                 </div>
-                <section className="w-full">
+                <section className="overflow-hidden w-full">
                     <ScrollAnimatedSection>
 
                         <img src={files.Group78} alt="" className="hidden md:block" />
@@ -125,7 +125,7 @@ export default function AboutSection() {
                     </div>
                 </section>
 
-                <div className=" lg:absolute bottom-20 right-20 flex md:flex-row flex-col md:hidde gap-2 items-center px-4 py-10 md:py-0">
+                <div className="overflow-hidden lg:absolute bottom-20 right-20 flex md:flex-row flex-col md:hidde gap-2 items-center px-4 py-10 md:py-0">
                     {features.map((feature, index) => (
                         <>
                         <ScrollAnimatedRight>

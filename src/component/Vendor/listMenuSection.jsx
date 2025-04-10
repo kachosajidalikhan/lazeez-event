@@ -4,42 +4,54 @@ import ScrollAnimatedSection from "../scrollsection";
 
 export default function ListFoodMenuSection() {
     return (
-        <section className="relative overflow-hidden w-full px-6 md:px-10 pt-30">
-            <div className="container mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                
+        <section className="relative w-full px-6 md:px-10 pt-30">
+            <div className=" mx-auto">
+            <div className="flex flex-col md:flex-row justify-between mt-4">
+
                     {/* Text Section */}
+                    <ScrollAnimatedRight>
+
+                        <div className=" overflow-hidden flex md:hidden justify-center md:justify-center relative">
+                            <div className="relative w-48 md:w-54 md:h-54 -top-5">
+                                <img
+                                    src={files.Image5}
+                                    alt="Menu book illustration"
+                                    className="w-38 md:w-full"
+                                />
+                            </div>
+                        </div>
+                    </ScrollAnimatedRight>
                     <ScrollAnimatedSection>
 
-                    <div className="text-white">
-                        <h2 className="text-3xl  md:text-4xl mb-6 Poppins-bold leading-tight">
-                            List your menu and food packages.
-                        </h2>
-                        <p className="text-lg md:text-[25px] font-normal leading-relaxed Poppins">
-                            Showcase your culinary offerings by <br /> adding your menu and <br /> customizable food packages. <br /> Highlight your
-                            specialties, pricing, <br /> promotions, and options for bulk <br /> orders to attract event organizers <br /> and grow your
-                            business.
-                        </p>
-                    </div>
+                        <div className="text-white overflow-hidden">
+                            <h2 className="text-3xl md:text-4xl mb-6 Poppins-bold leading-tight">
+                                List your menu and food packages.
+                            </h2>
+                            <p className="text-lg md:text-[25px] font-normal leading-relaxed Poppins">
+                                Showcase your culinary offerings by <br /> adding your menu and <br /> customizable food packages. <br /> Highlight your
+                                specialties, pricing, <br /> promotions, and options for bulk <br /> orders to attract event organizers <br /> and grow your
+                                business.
+                            </p>
+                        </div>
                     </ScrollAnimatedSection>
 
                     {/* Image & Decorative SVG */}
                     <ScrollAnimatedRight>
 
-                    <div className="flex justify-center md:justify-center relative">
-                        <div className="relative w-48 md:w-54 md:h-54 -top-5">
-                            <img
-                                src={files.Image5}
-                                alt="Menu book illustration"
-                                className="w-38 md:w-full"
+                        <div className=" overflow-hidden hidden md:flex">
+                            <div className="">
+                                <img
+                                    src={files.Image5}
+                                    alt="Menu book illustration"
+                                    
                                 />
+                            </div>
                         </div>
-                    </div>
-                                </ScrollAnimatedRight>
+                    </ScrollAnimatedRight>
                 </div>
             </div>
             <div className="">
-                <img src={files.Group36} alt="" className=" absolute w-20 lg:w-40 left-0 right-0 m-auto" />
+                <img src={files.Group36} alt="" className=" absolute w-20 md:-bottom-20 lg:w-30 left-0 right-0 m-auto" />
             </div>
         </section>
     );

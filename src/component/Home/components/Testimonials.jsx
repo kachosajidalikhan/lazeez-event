@@ -20,13 +20,13 @@ export default function Testimonials() {
       <img
         src={files.Foods1}
         alt="Chef"
-        className=" absolute bottom-0 left-0 md:w-50 w-30"
+        className=" absolute hidden md:block bottom-0 left-0 md:w-50 w-30"
 
       />
        <img
         src={files.Foods4}
         alt="Chef"
-        className="md:w-30 w-18 absolute bottom-0 right-0"
+        className="md:w-30 w-18 absolute -bottom-4 right-0"
         width={100}
       />
 

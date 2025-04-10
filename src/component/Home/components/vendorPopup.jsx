@@ -29,7 +29,7 @@ export default function VendorPopup({ isOpen = true, onClose }) {
 
     return (
         <div className={`fixed inset-0 z-5000 flex items-center justify-center bg-black/50 transition-opacity duration-300 ${animate ? 'opacity-100' : 'opacity-0'}`}>
-            <div className={`relative mx-4 w-full max-w-3xl rounded-xl bg-[#D15280] text-white shadow-lg p-6 md:p-8 py-0 md:py-0 transform transition-transform duration-300 ${animate ? 'scale-100' : 'scale-90'}`}>
+            <div className={`relative pb-4 md:pb-0 mx-4 w-full max-w-3xl rounded-xl bg-[#D15280] text-white shadow-lg p-6 md:p-8 py-0 md:py-0 transform transition-transform duration-300 ${animate ? 'scale-100' : 'scale-90'}`}>
                 {/* Close Button */}
                 <button
                     onClick={handleClose}
@@ -40,15 +40,15 @@ export default function VendorPopup({ isOpen = true, onClose }) {
 
                 {/* Content Section */}
                 <div className="flex flex-col md:flex-row items-center">
-                    <div className="w-full text-center md:text-left mt-10">
-                        <h2 className="text-2xl w-[85%] md:text-5xl font-bold leading-snug mb-4 PoppinsBold">
+                    <div className="w-full md:text-left mt-10">
+                        <h2 className="text-2xl w-[85%] md:text-5xl font-bold leading-snug mb-4 Poppins-bold">
                             Looks like there's no vendor in your area.
                         </h2>
-                        <div className="flex w-full justify-between">
+                        <div className="flex text-start w-full justify-between">
                             <div>
                                 <p className="text-lg mb-6 Poppins">Become our vendor now</p>
                                 <Link to='/vendor-page'>
-                                    <button className="rounded-[80px] bg-[#FF4583E5] px-8 py-1 font-bold text-white transition hover:bg-[#ff4a7d] Poppins">
+                                    <button className="rounded-[80px] bg-[#FF4583E5] px-4 md:px-8 py-1 font-bold text-white transition hover:bg-[#ff4a7d] Poppins">
                                         Apply Now
                                     </button>
                                 </Link>

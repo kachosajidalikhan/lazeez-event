@@ -15,21 +15,21 @@ export default function Footer() {
                     {/* Left Section - Policies */}
                     <div className="w-full Poppins sm:w-1/3 mb-6 sm:mb-0">
                         <ul className="space-y-2">
-                            <a href="/privacy-policy-page">
+                            <Link to="/privacy-policy-page">
                             <li className="hover:underline cursor-pointer">Privacy Policy</li>
-                            </a>
-                            <a href="#">
+                            </Link>
+                            <Link to="#">
                             <li className="hover:underline cursor-pointer">Captain Policy</li>
-                            </a>
-                            <a href="#">
+                            </Link>
+                            <Link to="#">
                             <li className="hover:underline cursor-pointer">Cookies Policy</li>
-                            </a>
-                            <a href="refund-cancellation-page">
+                            </Link>
+                            <Link to="refund-cancellation-page">
                             <li className="hover:underline cursor-pointer">Refund and Cancellation</li>
-                            </a>
-                            <a href="/terms-and-condition-page">
+                            </Link>
+                            <Link to="/terms-and-condition-page">
                             <li className="hover:underline cursor-pointer">Terms and Condition</li>
-                            </a>
+                            </Link>
                         </ul>
                     </div>
 

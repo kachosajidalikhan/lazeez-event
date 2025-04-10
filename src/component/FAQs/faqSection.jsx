@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Plus } from "lucide-react";
+import ScrollAnimatedSection from "../scrollsection";
+import ScrollAnimatedRight from "../scrollright";
 
 export default function FAQSection() {
     const [openItem, setOpenItem] = useState(null);
@@ -37,34 +39,40 @@ export default function FAQSection() {
 
     return (
         <div className="bg-white max-w-3xl mx-auto px-4 py-12 text-center flex flex-col justify-center items-center">
-            <h1 className="text-7xl mb-6 text-[#e91e63] Poppins-bold">FAQs</h1>
+            <ScrollAnimatedSection>
 
-            <p className="mb-10 text-2xl Poppins">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl mb-6 text-[#e91e63] Poppins-bold">FAQs</h1>
+
+            <p className="max-w-4xl Poppins text-center text-base md:text-lg lg:text-xl">
                 Have questions about how Lazeez Events works? We've got you covered! Explore our frequently asked questions to
                 find answers about placing orders, becoming a vendor, and everything in between.
             </p>
+            </ScrollAnimatedSection>
 
             <div className="space-y-3 text-left md:w-1/2">
                 {faqs.map((faq) => (
+                    <ScrollAnimatedRight>
                     <div
-                        key={faq.id}
-                        className="bg-[#ffd0d7] rounded-lg overflow-hidden transition-all duration-200"
+                    
+                    key={faq.id}
+                    className="bg-[#ffd0d7] rounded-lg overflow-hidden transition-all duration-200"
                     >
                         <button
                             onClick={() => toggleItem(faq.id)}
                             className="w-full flex justify-between items-center px-4 py-3 focus:outline-none"
-                        >
+                            >
                             <span className="text-base font-medium Poppins">{faq.question}</span>
                             <Plus
                                 className={`h-5 w-5 text-[#e91e63] transition-transform duration-200 ${openItem === faq.id ? "rotate-45" : ""
                                     }`}
-                            />
+                                    />
                         </button>
 
                         {openItem === faq.id && (
                             <div className="px-4 pb-3 text-sm text-gray-700 Poppins">{faq.answer}</div>
                         )}
                     </div>
+                        </ScrollAnimatedRight>
                 ))}
             </div>
         </div>

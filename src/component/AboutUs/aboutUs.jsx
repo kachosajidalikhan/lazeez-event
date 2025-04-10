@@ -27,7 +27,7 @@ export default function AboutUs() {
         <HowWeWork />
 
         {/* <section style={{ backgroundImage: url(`${files.Group58}`) }}  > */}
-        <section className="overflow-hidden  relative">
+        <section className="relative">
 
             {/* Desktop Background Image (hidden on tab/mob) */}
            
@@ -39,8 +39,8 @@ export default function AboutUs() {
                 <ScrollAnimatedSection>
 
                 <div className="flex flex-col animate-fadeInUp items-center justify-center ">
-                    <img src={files.Group71} alt="Step 1 Mobile" className="w-full max-w-xs" />
-                    <img src={files.Frame18} alt="Road Line" className="w-20 h-28 my-4" />
+                    <img src={files.Group71} alt="Step 1 Mobile" className="w-full z-10 max-w-xs" />
+                    <img src={files.Frame18} alt="Road Line" className="w-32 h-40 relative bottom-10" />
 
                     <div className="text-white text-center">
                         <h1 className="Poppins-bold text-2xl sm:text-3xl pb-4">Register and Onboard</h1>
@@ -57,8 +57,8 @@ export default function AboutUs() {
                 <ScrollAnimatedSection>
 
                 <div className="flex flex-col items-center justify-center animate-fadeInUp">
-                    <img src={files.Group72} alt="Step 2 Mobile" className="w-full max-w-xs" />
-                    <img src={files.Frame18} alt="Road Line" className="w-20 h-28 my-4" />
+                    <img src={files.Group72} alt="Step 2 Mobile" className="w-full z-10 max-w-xs" />
+                    <img src={files.Frame18} alt="Road Line" className="w-30 h-38 relative bottom-12" />
 
                     <div className="text-white text-center">
                         <h1 className="Poppins-bold text-2xl sm:text-3xl pb-4">Explore Packages and Customization</h1>
@@ -75,8 +75,8 @@ export default function AboutUs() {
                 <ScrollAnimatedSection>
 
                 <div className="flex flex-col items-center justify-center animate-fadeInUp">
-                    <img src={files.Group73} alt="Step 3 Mobile" className="w-full max-w-xs" />
-                    <img src={files.Frame18} alt="Road Line" className="w-20 h-28 my-4" />
+                    <img src={files.Group73} alt="Step 3 Mobile" className="w-full z-10 max-w-xs" />
+                    <img src={files.Frame18} alt="Road Line" className="w-30 h-38 relative bottom-10" />
 
                     <div className="text-white text-center">
                         <h1 className="Poppins-bold text-2xl sm:text-3xl pb-4">Place Your Lazeez Order</h1>
