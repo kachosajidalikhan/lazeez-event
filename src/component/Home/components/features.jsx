@@ -63,7 +63,7 @@ export default function Features() {
 
                                 <div key={index}
                                     style={{ backgroundImage: `url(${files.circle})`, backgroundRepeat: 'no-repeat', backgroundPositionX: '-30px', backgroundPositionY: '390px', backgroundPosition: 'fixed' }}
-                                    className="p-2 m-auto rounded-[20px] bg-white Poppins card-shadow back-image lg:w-80 md:w-86 ">
+                                    className="p-2 m-auto rounded-[20px] bg-white Poppins card-shadow back-image lg:w-80 xl:w-100 md:w-86 flex flex-col justify-end h-133 w-80 ">
                                     <div className="flex gap-4 flex-col items-center">
                                         {/* <img src={item.extra} alt="" className="absolute -ml-20" /> */}
                                         <img src={item.image} alt="" />
@@ -84,7 +84,7 @@ export default function Features() {
                                         {"⭐".repeat(item.rating)}
 
                                     </div>
-                                    <div className="flex gap-4 items-center justify-center mt-4">
+                                    <div className="flex gap-4 items-start justify-center mt-4">
                                         <button onClick={() => setSelectedCard(item)} className="bg-[#ED004F]/69 px-2 md:px-4 py-1 rounded-full text-white text-[10px] md:text-[10px]">Order Now</button>
                                         <button onClick={() => setSelectedCard(item)} className="bg-[#ED004F]/69 px-2 md:px-4 py-1 rounded-full text-white text-[10px] md:text-[10px]">Learn More</button>
                                     </div>

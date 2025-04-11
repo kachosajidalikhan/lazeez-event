@@ -6,9 +6,9 @@ export default function ThankYouScreen() {
     const nav = useNavigate();
     return (
         <div className="flex items-center justify-center min-h-screen  px-4">
-            <div className="w-full max-w-xl p-8 bg-pink-100 rounded-[80px] shadow-2xl text-center space-y-6">
+            <div className="w-full max-w-xl p-8 bg-white/79 rounded-[80px] shadow-2xl text-center space-y-6">
                 <div className="flex flex-col items-center space-y-6">
-                    <h1 className="text-3xl PoppinsBold md:text-4xl font-bold text-[#CC054D]">
+                    <h1 className="text-3xl Poppins-bold md:text-4xl font-bold text-[#CC054D]">
                         Thank You For Your Message
                     </h1>
 
