@@ -40,9 +40,9 @@ export default function AboutUs() {
 
                 <div className="flex flex-col animate-fadeInUp items-center justify-center ">
                     <img src={files.Group71} alt="Step 1 Mobile" className="w-full z-10 max-w-xs" />
-                    <img src={files.Frame18} alt="Road Line" className="w-32 h-40 relative bottom-10" />
+                    <img src={files.Frame18} alt="Road Line" className="w-26 h-50 relative bottom-10" />
 
-                    <div className="text-white text-center">
+                    <div className="text-white relative bottom-14 text-center">
                         <h1 className="Poppins-bold text-2xl sm:text-3xl pb-4">Register and Onboard</h1>
                         <p className="Poppins text-base sm:text-lg">
                             Sign up and join our platform in minutes. <br />
@@ -58,9 +58,9 @@ export default function AboutUs() {
 
                 <div className="flex flex-col items-center justify-center animate-fadeInUp">
                     <img src={files.Group72} alt="Step 2 Mobile" className="w-full z-10 max-w-xs" />
-                    <img src={files.Frame18} alt="Road Line" className="w-30 h-38 relative bottom-12" />
+                    <img src={files.Frame18} alt="Road Line" className="w-26 h-50  relative bottom-12" />
 
-                    <div className="text-white text-center">
+                    <div className="text-white text-center relative bottom-16">
                         <h1 className="Poppins-bold text-2xl sm:text-3xl pb-4">Explore Packages and Customization</h1>
                         <p className="Poppins text-base sm:text-lg">
                             Browse through a variety of featured and <br />
@@ -76,9 +76,9 @@ export default function AboutUs() {
 
                 <div className="flex flex-col items-center justify-center animate-fadeInUp">
                     <img src={files.Group73} alt="Step 3 Mobile" className="w-full z-10 max-w-xs" />
-                    <img src={files.Frame18} alt="Road Line" className="w-30 h-38 relative bottom-10" />
+                    <img src={files.Frame18} alt="Road Line" className="w-26 h-50  relative bottom-10" />
 
-                    <div className="text-white text-center">
+                    <div className="text-white text-center relative bottom-13">
                         <h1 className="Poppins-bold text-2xl sm:text-3xl pb-4">Place Your Lazeez Order</h1>
                         <p className="Poppins text-base sm:text-lg">
                             Pick your perfect package and place bulk <br />

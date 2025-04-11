@@ -19,6 +19,7 @@ import PrivacyPage from './component/PrivacyPage/privacyPolicy'
 import TermsPage from './component/TermsandCondition/termsAndConditions'
 import RefundPage from './component/Refundpage/refundCancellationPolicy'
 import AppDownloadSection from './component/AppDownload/appDownloadPage'
+import ThankYouScreen from './component/Thankyou/thankyou'
 function App() {
 
   return (
@@ -43,6 +44,7 @@ function App() {
       <Route path="/refund-cancellation-page" element={<RefundPage/>} />
       <Route path="/press-release-page" element={<PressSection/>} />
       <Route path="/App-Download-Section" element={<AppDownloadSection/>} />
+      <Route path="/Thank-You-Section" element={<ThankYouScreen/>} />
       <Route path="/Sub-Packages/:id" element={<SubPackages/>} />
     </Routes>
     <Footer/>

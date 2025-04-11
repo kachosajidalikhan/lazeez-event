@@ -126,17 +126,17 @@ export default function Features() {
 
                     </div>
                         </ScrollAnimatedRight>
-                    <div className="px-4 ">
+                    <div className="px-4 md:ml-6 ">
                         <ScrollAnimatedSection>
 
                         <div className="flex-col md:flex md:flex-row gap-4">
                             <div className="bg-white md:mb-0 mb-4 px-2 py-1 rounded-lg flex items-center w-fit">
                                 <img src={files.apple} alt="" className=" w-[46px] h-[46px] mr-2" />
-                                <h1 className="text-[#ED004F] Poppins text-[14px] md:text-[18px]">Download the App On <strong className="text-[#ED004F] text-[16px] md:text-[20px]"> <br /> App Store</strong></h1>
+                                <h1 className="text-[#ED004F] Poppins text-[14px] md:text-[18px]">Download the App On <strong className="text-[#ED004F] text-[16px] md:text-[20px] Poppins-bold"> <br /> App Store</strong></h1>
                             </div>
                             <div className="bg-white px-2 py-1 rounded-lg flex items-center w-fit">
                                 <img src={files.play} alt="" className=" w-[46px] h-[46px] mr-2" />
-                                <h1 className="text-[#ED004F] Poppins text-[14px] md:text-[18px]" >Download the App On <strong className="text-[#ED004F] text-[16px] md:text-[20px]"> <br /> Play Store</strong></h1>
+                                <h1 className="text-[#ED004F] Poppins text-[14px] md:text-[18px]" >Download the App On <strong className="text-[#ED004F] text-[16px] md:text-[20px] Poppins-bold"> <br /> Play Store</strong></h1>
                             </div>
                         </div>
                         </ScrollAnimatedSection>
@@ -144,10 +144,10 @@ export default function Features() {
 
                         <div className=" mt-10 flex md:flex-row flex-col gap-x-4">
                             <Link to='/vendor-page'>
-                                <button  className="bg-[#A8003D] md:mb-0 mb-4 Poppins-bold text-white rounded-lg px-6 py-2 md:text-[20px]">Become Our Partner</button>
+                                <button  className="bg-[#A8003D] hover:bg-[#ED004F] md:mb-0 mb-4 Poppins-bold text-white rounded-lg px-6 py-2 md:text-[20px]">Become Our Partner</button>
                             </Link>
                             <Link to="/Signup-Form">
-                                <button className="bg-[#A8003D] Poppins-bold text-white rounded-lg px-6 py-2 md:text-[20px]"> Sign up</button>
+                                <button className="bg-[#A8003D] hover:bg-[#ED004F] Poppins-bold text-white rounded-lg px-6 py-2 md:text-[20px]"> Sign up</button>
                             </Link>
                         </div>
                         </ScrollAnimatedRight>
@@ -155,7 +155,7 @@ export default function Features() {
                 <br />
                 <br />
 
-                <div className="relative w-full min-h-[500px] md:h-screen px-6 py-12 md:px-12">
+                <div className="relative w-full  px-6 py-12 md:px-12">
                     {/* Soda can - top left */}
                     <div className="absolute -top-30 right-0 md:hidden block">
                         <img src={files.group66} alt="French fries,logo" className="object-contain w-[200px]" />
@@ -182,16 +182,18 @@ export default function Features() {
                     {/* Main content */}
                     <ScrollAnimatedRight>
 
-                    <div className="relative z-10 max-w-lg">
+                    <div className="relative z-10 lg:w-[60%] w-[80%]">
                         <h1 className="text-white md:w-180 text-4xl md:text-7xl font-bold pt-40 mb-6 Poppins-bold">Chefs! Let's Cook</h1>
-                        <p className="text-white text-lg md:text-xl mb-8 Poppins">
+                        <p className="text-white text-lg md:text-[30px] mb-8 Poppins">
                             Whether you're a catering service, a restaurant, a local culinary expert, or a cozy café, join Lazeez Events
                             to showcase your talent and grow your business. Signing up is simple: register, list your packages, and become
                             a part of memorable celebrations!
                         </p>
+                        <Link to="/vendor-page">
                         <button className="bg-[#9c0036] hover:bg-[#7d002c] text-white px-6 py-2 rounded-md Poppins">
                             Become Our Partner
                         </button>
+                        </Link>
                     </div>
                     </ScrollAnimatedRight>
                 </div>

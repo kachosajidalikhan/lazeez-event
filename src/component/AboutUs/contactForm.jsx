@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { User, Phone, Mail, MapPin, MessageSquare } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function ContactForm() {
+  const nav = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -21,6 +23,8 @@ export default function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
+
+    nav('/Thank-You-Section')
 
     // Reset form
     setFormData({

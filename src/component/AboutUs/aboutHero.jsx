@@ -3,7 +3,9 @@ import files from "../../constants/index";
 
 export default function AboutHero() {
     return (
-        <section className="overflow-hidden  relative animate-fadeInRight text-white">
+        <section className="relative animate-fadeInRight text-white">
+            <br />
+            <br />
             <div className="max-w-6xl mx-auto px-4 md:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 items-center">
 

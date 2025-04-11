@@ -6,17 +6,17 @@ export default function ListFoodMenuSection() {
     return (
         <section className="relative w-full px-6 md:px-10 pt-30">
             <div className=" mx-auto">
-            <div className="flex flex-col md:flex-row justify-between mt-4">
+            <div className="flex flex-col lg:flex-row justify-between mt-4">
 
                     {/* Text Section */}
                     <ScrollAnimatedRight>
 
-                        <div className=" overflow-hidden flex md:hidden justify-center md:justify-center relative">
+                        <div className="flex lg:hidden justify-center md:justify-center relative">
                             <div className="relative w-48 md:w-54 md:h-54 -top-5">
                                 <img
                                     src={files.Image5}
                                     alt="Menu book illustration"
-                                    className="w-38 md:w-full"
+                                    className="w-38 lg:w-full"
                                 />
                             </div>
                         </div>
@@ -38,7 +38,7 @@ export default function ListFoodMenuSection() {
                     {/* Image & Decorative SVG */}
                     <ScrollAnimatedRight>
 
-                        <div className=" overflow-hidden hidden md:flex">
+                        <div className=" hidden lg:flex">
                             <div className="">
                                 <img
                                     src={files.Image5}

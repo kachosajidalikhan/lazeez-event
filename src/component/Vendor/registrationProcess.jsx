@@ -15,15 +15,16 @@ export default function RegistrationProcess() {
         <div className="mt-2 px-4">
           <h1 className="text-3xl md:text-4xl Poppins-bold">Registration process</h1>
         </div>
-        <div className="flex flex-col lg:flex-row items-start mt-4">
+        <div className="flex flex-col lg:flex-row items-star mt-4">
           {/* Left Column */}
           <ScrollAnimatedSection>
 
-          <div className="">
-            <div className="md:relative">              
-                <img src={files.Image4} alt="" className="w-50 md:w-full" />
+          <div className="flex items-center justify-center">
+            <div className="md:relativ">              
+                <img src={files.Image4} alt="" className="w-50 lg:w-full" />
             </div>
           </div>
+          
           </ScrollAnimatedSection>
 
           {/* Right Column */}
